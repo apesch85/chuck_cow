@@ -1,7 +1,9 @@
-uname_response=$(uname -a)
-
 # Checks the system architecture, and sets $OS accordingly.
 # TODO: Handle CentOS as well.
+# TODO: Check for jq (https://stedolan.github.io/jq/)
+
+uname_response=$(uname -a)
+
 get_architecture () {
     if [[ "$uname_response" == *"Darwin"* ]]; then
         OS="MAC"

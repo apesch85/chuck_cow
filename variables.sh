@@ -1,3 +1,7 @@
+# Just settings some variables to be used elsewhere. 
+# get_architecture comes from check_dependencies.sh. I decided to just run that
+# here because it's really just setting the $OS variable.
+
 source check_dependencies.sh
 
 JOKE='.value'
