@@ -1,4 +1,4 @@
-# Just settings some variables to be used elsewhere. 
+# Just setting some variables to be used elsewhere. 
 # get_architecture comes from check_dependencies.sh. I decided to just run that
 # here because it's really just setting the $OS variable.
 
