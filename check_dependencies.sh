@@ -42,7 +42,7 @@ check_cowsay () {
 }
 
 # Figures out if jq is installed, and installs if not.
-check_cowsay () {
+check_jq () {
     if [[ $1 == "MAC" ]]; then
         brew list -q jq > /dev/null 2>&1
         status=$(echo $?)
