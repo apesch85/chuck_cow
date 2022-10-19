@@ -8,9 +8,9 @@ source check_dependencies.sh
 
 main () {
     check_cowsay $OS
-    get_joke $JOKE
-    dieselfy $JOKE
-    cowsay $RESPONSE
+    get_joke $VALUE
+    dieselfy "$JOKE"
+    cowsay $JOKE
 }
 
 main

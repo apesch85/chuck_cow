@@ -4,7 +4,7 @@
 
 source check_dependencies.sh
 
-JOKE='.value'
+VALUE='.value'
 CATEGORIES='.categories'
 ICON='.icon_url'
 ID='.id'

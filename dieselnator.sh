@@ -4,7 +4,7 @@
 
 dieselfy () {
 VINJOKE=$1 # takes $JOKE
-VIN=$(sed -e 's/Chuck/Vin/gI' <<< $VINJOKE) # Replace Chuck with Vin
-DIESEL=$(sed -e 's/Norris/Diesel/gI' <<< $VIN) # Replace Norris with Diesel
-$1=$DIESEL
+VIN=$(sed 's/Chuck/Vin/gI' <<< $VINJOKE) # Replace Chuck with Vin
+DIESEL=$(sed 's/Norris/Diesel/gI' <<< $VIN) # Replace Norris with Diesel
+JOKE="$DIESEL"
 }

@@ -2,5 +2,5 @@
 # stuff as well. 
 
 get_joke () {
-    RESPONSE=$(curl -s https://api.chucknorris.io/jokes/random | jq -r $1)
+    JOKE=$(curl -s https://api.chucknorris.io/jokes/random | jq -r $1)
 }
