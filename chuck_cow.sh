@@ -8,6 +8,7 @@ source check_dependencies.sh
 
 main () {
     check_cowsay $OS
+    check_jq $OS
     get_joke $VALUE
     dieselfy "$JOKE"
     cowsay $JOKE
