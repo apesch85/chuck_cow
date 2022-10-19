@@ -1,6 +1,5 @@
 # Checks for and installs all dependencies for chuck_cow.sh.
 # TODO: Handle CentOS as well.
-# TODO: Check for jq (https://stedolan.github.io/jq/)
 
 uname_response=$(uname -a)
 
