@@ -33,6 +33,10 @@ check_cowsay () {
             if [[ $status == "1" ]]; then
                 sudo apt-get -y install cowsay > /dev/null 2>&1
             fi
+        elif [[ "$uname_response" == *"fedora"* ]]; then
+            if [[ -z "$(yum list installed cowsay)" ]]; then
+                sudo yum install cowsay > /dev/null 2>&1
+            fi
         else
             echo "We're currently only installing for Ubuntu & Darwin."
             echo "Please check back later for updates."
@@ -54,6 +58,10 @@ check_jq () {
             status=$(echo $?)
             if [[ $status == "1" ]]; then
                 sudo apt-get -y install jq > /dev/null 2>&1
+            fi
+    elif [[ "$uname_response" == *"fedora"* ]]; then
+            if [[ -z "$(yum list installed jq)" ]]; then
+                sudo yum install jq > /dev/null 2>&1
             fi
         else
             echo "We're currently only installing for Ubuntu & Darwin."
